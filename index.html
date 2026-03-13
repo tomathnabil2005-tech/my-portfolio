@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+
+<link rel="icon" href="1.1.png">
+
+<style>
+body {
+  background-color: rgb(44, 62, 80);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.social-container {
+  background: rgba(236, 240, 241, 0.6);
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.social-container::before {
+  content: '';
+  position: absolute;
+  top: -5px; 
+  left: -5px; 
+  right: -5px; 
+  bottom: -5px;
+  border-radius: 25px;
+  background: linear-gradient(270deg,#ff004c,#ffec00,#00ffee,#ff004c);
+  background-size: 400% 400%;
+  animation: glowing 6s linear infinite;
+  z-index: 0;
+}
+
+@keyframes glowing {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.social-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, background 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.social-link img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.social-link span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.social-link:hover {
+  transform: scale(1.05);
+}
+
+.social-link:hover img {
+  transform: scale(1.2);
+}
+
+@media (max-width:400px){
+.social-container{
+width:90%;
+padding:20px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="social-container">
+
+<h2>Contact Me</h2>
+
+<a class="social-link" href="https://www.facebook.com/tomas.nabil.464286/" target="_blank">
+<img src="1.png">
+<span>Facebook</span>
+</a>
+
+<a class="social-link" href="https://www.instagram.com/tomas_nabil_1/?hl=ar" target="_blank">
+<img src="2.png">
+<span>Instagram</span>
+</a>
+
+<a class="social-link" href="https://www.snapchat.com/add/tomas_nabil24" target="_blank">
+<img src="3.png">
+<span>Snapchat</span>
+</a>
+
+<a class="social-link" href="https://wa.me/201288452212" target="_blank">
+<img src="4.png">
+<span>WhatsApp</span>
+</a>
+
+<a class="social-link" href="tel:+201288452212">
+<img src="5.png">
+<span>Phone</span>
+</a>
+
+<a class="social-link" href="https://www.linkedin.com/in/tomas-nabil-881776258?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+<img src="6.png">
+<span>LinkedIn</span>
+</a>
+
+<a class="social-link" href="https://www.tiktok.com/@tomas_nabil_?_r=1&_t=ZS-94eePrncG1J" target="_blank">
+<img src="7.png">
+<span>TikTok</span>
+</a>
+
+
+
+</div>
+
+</body>
+</html>
